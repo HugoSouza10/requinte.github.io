@@ -1,0 +1,621 @@
+body{
+	margin: 0;
+	padding: 0;
+	
+}
+
+/* AQUI FICA A PARTE DO CABEÇAHO*/
+
+.container{
+	display: flex;
+	background-color:black;
+	height: 80px;
+	max-width: 100%;
+	position: fixed;
+	z-index: 10;
+	width: 1349px;
+}
+
+.container_Interno{
+	width: 1200px;
+	height: 80px;
+	display: flex;
+	justify-content: space-between;
+	margin: auto;
+	
+}
+
+.logo img{
+	margin-top: 15px;
+}
+
+/*MENÚ DESKTOP*/
+
+
+#Menu ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	transition: 0.5s;
+	
+}
+
+#Menu ul li a{
+	text-decoration: none;
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	
+}
+
+#Menu ul li{
+	float: left;
+	line-height: 80px;
+	margin-left:30px ;
+}
+
+
+ #Menu ul li a.active{
+	 padding: 10px;
+	background-color: goldenrod;
+}
+#Menu ul li a:hover{
+	background-color: goldenrod ;
+	padding: 10px;
+	transition:0.5s;
+	
+}
+
+/*MENU MOBILE*/
+
+ .Menu_Mobile{
+	display: none;
+	
+}
+
+
+
+/*REDES SOCIAIS*/
+
+.Social{
+	color: white;
+	display: flex;
+	width: 100px;
+}
+
+.icone{
+	margin: auto;
+}
+
+.icone img{
+	margin-right: 10px;
+}
+
+.icone img:hover{
+	width: 30px;
+	height: 30px;
+	transition: 0.3s;
+}
+
+
+/*AREA SLIDE*/
+
+
+.SlideShow{
+	max-width:100%;
+	margin: auto;
+}
+.swiper-container {
+	width: 100%;
+	padding-left: 100px;
+	height: 500px;
+}
+
+
+/*ÁREA DO CORPO DO SITE*/
+
+
+/*ÁREA VISUAL MODELOS*/
+
+.visual_Modelos{
+	display: flex;
+	max-width: 100%;
+}
+
+.container_Modelos{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 1200px;
+	margin:auto;
+	color: wheat;
+	flex-wrap: wrap;
+	margin-top:50px;
+	margin-bottom: 50px;
+
+	
+	
+}
+
+.container_Modelos img{
+	opacity: 80%;
+	transition: 1s;
+}
+
+.container_Modelos img:hover{
+	opacity: 100%;
+	padding-bottom: 60px;
+	
+	
+}
+
+
+/*ÁREA SOBRE*/
+
+.Sobre{
+	display: flex;
+	max-width: 100%;
+	height: 400px;
+	background-color: black;
+}
+
+.sobre_Interno{
+	display: flex;
+	align-items: center;
+	width: 1200px;
+	margin:auto;
+	height:400px;
+	
+	
+}
+
+.Imagem_Sobre img{
+	height:318px;
+}
+
+
+
+
+
+.Texto_Sobre{
+	padding-left: 23px;
+	height: 271px;
+	width: 100%;
+	color: white;
+	font-family: Arial;
+}
+
+.Texto_Sobre .Texto_Info{
+	text-align: justify;
+	font-size: 16x;
+}
+
+
+/*ÁREA DESCONTO*/
+
+#Desconto{
+	display: flex;
+	width: 100%;
+	height: 400px;
+	background-color: #333333;
+}
+
+.Container_Desconto{
+	display: flex;
+	width: 1200px;
+	margin:auto;
+	height:400px;
+	
+}
+
+/*IMAGEM DESCONTO*/
+
+.Container_Desconto .Imagem_Desconto{
+		margin-left: 20px;
+}
+
+
+/*TEXTO DESCONTO*/
+
+.Texto_Desconto{
+	margin-top: 40px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: white;
+	text-align: justify;
+}
+
+.Texto_Desconto .Texto_Visite{
+	margin-top: 40px;
+}
+
+.Texto_Desconto h1{
+	font-size:40px;
+	line-height: 50px;
+}
+
+
+/*ÁREA SERVIÇOS*/
+
+#Servicos{
+	display: flex;
+	max-width: 100%;
+	background-color:black;
+}
+
+.Container_Servicos{
+	width: 1200px;
+	margin:auto;
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	
+}
+
+/*ÁREA DA DESCRIÇÃO DE SERVIÇOS/TODOS OS SERVIÇOS*/
+
+.Container_Descrição_Servicos{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	
+}
+
+.Container_Servicos h1{
+	width: 100%;
+	height: 40px;
+	margin-top: 73px;
+	text-align: center;
+	
+}
+
+
+
+/*ÁREA SERVIÇOS ITERNO*/
+
+.Servicos_Interno{
+	display: flex;
+	margin-top: 50px;
+	width: 464px;
+	height: 223px;
+	
+}
+
+/*IMAGEM SERVIÇOS*/
+
+.Servicos_Imagem{
+	height: 100%;
+	width:121px;
+	
+}
+
+/*IMAGEM TEXTO*/
+.Servicos_Imagem img{
+	padding-top: 20px;
+}
+
+/*TEXTO SERVIÇOS*/
+
+.Texto_Servicos{
+	padding-left: 11px;
+}
+
+.Texto_Servicos h2{
+	margin-top: 40px;
+	padding-left: 10px;
+	font-size: 20px;
+
+}
+
+/*DESCRIÇÃO DO TEXTO*/
+
+.Texto_Descricao{
+	margin-top: 20px;
+	padding-left: 10px;
+}
+
+/*ÁRE FOOTER*/
+
+footer{
+	width: 100%;
+	background-color: #1C2632;
+}
+
+footer .container_footer{
+	width: 100%;
+	margin: auto;
+	max-width: 1200px;
+	height: 283px;
+}
+
+.logo_footer{
+	margin: auto;
+	padding-top: 40px;
+	width: 152px;
+	height: 127px;
+
+}
+
+.logo_footer img{
+	margin: auto;
+	height: 127px;
+	width: 152px;
+}
+
+.Contato_footer{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	max-width: 75%;
+	margin: auto;
+	margin-top: 42px;
+	color: white;
+
+}
+
+.footer_informacao{
+	align-items: center;
+	display: flex;
+	
+	
+}
+
+.endereco{
+	padding-left: 10px;
+}
+
+.footer_informacao img{
+	width: 30px;
+	height: 30px;
+}
+
+
+
+
+
+
+
+
+
+/*AREA REPONSIVA*/
+
+
+/*Desktop*/
+
+@media(max-width: 1024px){
+	.visual_Modelos{
+		padding: 28px;
+	}
+	.Texto_Sobre .Texto_Info{
+		width: 428px;
+	}
+
+	.Texto_Desconto h1{
+		margin-left: 30px;
+	}
+
+	.Texto_Desconto{
+		margin-left: 30px;
+	}
+}
+
+
+
+/*Tablete*/
+@media(max-width:768px){
+	.container_Modelos img{
+		padding-top: 13px;
+	}
+
+	.Texto_Sobre .Texto_Info{
+		width: 381px;
+		text-align: justify;
+	}
+	.Imagem_Sobre img{
+		height: 243px;
+	}
+	
+
+	.Container_Desconto .Imagem_Desconto img{
+		width: 300px;
+		margin-top: 64px;
+	}
+	.logo img{
+		padding-left: 10px;
+	}
+
+	.Texto_Desconto h1{
+		font-size: 28px;
+	}
+	.Texto_Desconto{
+		margin-left: 3px;
+		margin-top: -6px;
+	}
+
+	.Texto_Desconto p{
+		margin-left: 37px;
+	}
+
+
+	.Servicos_Interno{
+		margin:auto
+	}
+
+	.Contato_footer{
+		height: 98px;
+	}
+
+	footer .container_footer{
+		height: 364px;
+	}
+}
+
+
+/*MOBILE*/
+
+@media(max-width:414px){
+	.Social{
+		display: none;
+	}
+	#Menu ul{
+		display: none;
+		flex-direction: column;
+		width: 411px;
+		height: 303px;
+		background-color:black;
+		text-align: center;
+		position: relative;
+		margin-left: -74px;
+		margin-top: 16px;
+	
+	}
+
+	#Menu ul li{
+		margin-left: 0px;
+	}
+
+
+	.logo img{
+		width: 60px;
+		height: 60px;
+		padding-left: 10px;
+	}
+	.Menu_Mobile{
+		display: block;
+		margin-top: 18px;
+	}
+	.Menu_Mobile img{
+		margin-left: 203px;
+
+	}
+
+	.container{
+		position: fixed;
+		z-index: 10;
+		margin-top: -80px;
+	}
+
+	.container_Interno{
+		width: 413px;;
+		z-index: 10;
+	}
+
+	.swiper-container{
+		margin-top: 80px;
+		height: 300px;
+	}
+
+	.container_Modelos img{
+		width: 200px;
+		height: 300px;
+	}
+
+	.container_Modelos{
+		justify-content: center;
+	}
+
+	.Imagem_Sobre img{
+		display: none;
+	}
+
+	.Servicos_Imagem img{
+		height: 80px;
+		padding-left: 10px;
+	}
+
+	.Texto_Servicos{
+		padding-left: 0px;
+	}
+
+	.Texto_Descricao{
+		font-size: 15px;
+		width: 279px;
+	}
+
+	.Container_Servicos h1{
+		font-size: 18px;
+	}
+
+	.Texto_Servicos h2{
+		font-size: 15px;
+	}
+
+	.Container_Desconto .Imagem_Desconto img{
+		display: none;
+	}
+
+	.footer_informacao{
+		margin-bottom: 10px;
+		
+	}
+
+	.Contato_footer{
+		margin-top: 4px;
+		justify-content: center;
+	}
+
+	.logo_footer{
+		width: 82px;
+	}
+
+	.logo_footer img{
+		width: 108px;
+		height: 100px;
+	}
+	.footer_informacao img{
+		width: 24px;
+		height: 24px;
+	}
+}
+
+
+@media(max-width:375px){
+	.swiper-container{
+		height: 250px;
+	}
+
+	.Texto_Sobre .Texto_Info{
+		font-size: 15px;
+		width: 298px;
+	}
+
+	.Texto_Sobre h1{
+		font-size: 19px;
+	}
+
+	.Texto_Desconto h1{
+		font-size: 25px;
+	}
+
+	.Container_Servicos h1{
+		font-size: 17px;;
+		margin-left: -41px;
+	}
+
+	.Texto_Servicos h2{
+		margin-top: 9px;
+		margin-left: 50px;
+	}
+
+	.Servicos_Imagem{
+		display: none;
+	}
+
+	.Texto_Descricao{
+		margin-left: 52px;
+	}
+
+	.logo_footer img{
+		margin-left: 5px;
+		height: 70px;
+		width: 70px;
+	}
+
+	.footer_informacao img{
+		width: 17px;
+		height: 17px;
+	}
+
+
+}
+
+
