@@ -243,7 +243,7 @@ body{
 }
 
 .Container_Servicos{
-	width: 1200px;
+	max-width: 100%;
 	margin:auto;
 	color: white;
 	font-family: Arial, Helvetica, sans-serif;
@@ -256,6 +256,7 @@ body{
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
+	padding: 50px;
 	
 }
 
@@ -264,8 +265,10 @@ body{
 	height: 40px;
 	margin-top: 73px;
 	text-align: center;
+	font-size: 24px;
 	
 }
+
 
 
 
@@ -278,6 +281,44 @@ body{
 	height: 223px;
 	
 }
+
+
+
+/*SEÇÃO MAQUIAGEM*/
+
+#Maquiagem{
+	background-color:#333333;
+	padding: 17px;
+}
+
+#Maquiagem h2{
+	 margin-top:29px;
+}
+
+/*BARBEIRO*/
+
+#Barbeiro {
+	display: flex;
+    justify-content: center;
+	align-items: center;
+	background-color:#1F1E1E;;
+}
+/*SEÇÃO CABELELEIRO*/
+#Cabeleleiro{
+	display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+	align-items: center;
+	background-color: #333333;
+	padding: 50px;
+}
+
+/*SEÇÃO COSMETICOS*/
+
+#Cosmetico .Servicos_Interno{
+	margin: auto;
+}
+
 
 /*IMAGEM SERVIÇOS*/
 
@@ -295,13 +336,13 @@ body{
 /*TEXTO SERVIÇOS*/
 
 .Texto_Servicos{
-	padding-left: 11px;
+	padding-left: 29px;
 }
 
 .Texto_Servicos h2{
 	margin-top: 40px;
 	padding-left: 10px;
-	font-size: 20px;
+	font-size: 17px;
 
 }
 
@@ -311,6 +352,8 @@ body{
 	margin-top: 20px;
 	padding-left: 10px;
 }
+
+
 
 /*ÁRE FOOTER*/
 
@@ -396,27 +439,43 @@ footer .container_footer{
 	.Texto_Desconto{
 		margin-left: 30px;
 	}
+
+	.Servicos_Interno{
+		margin: auto;
+	}
 }
 
 
 
 /*Tablete*/
-@media(max-width:768px){
+@media(max-width:968px){
+
+	#Menu ul li a.active{
+		padding:4px;
+	}
+	/*CONTAINER MODELOS*/
+	.container_Modelos{
+		justify-content: center;
+		flex-direction: column;
+	}
 	.container_Modelos img{
 		padding-top: 13px;
 	}
 
+	/*ÁREA SOBRE*/
+
 	.Texto_Sobre .Texto_Info{
-		width: 381px;
+		width:90%;
 		text-align: justify;
 	}
 	.Imagem_Sobre img{
-		height: 243px;
+		display: none;
 	}
 	
 
+	/*ÁREA DESCONTO*/
 	.Container_Desconto .Imagem_Desconto img{
-		width: 300px;
+		width: 250px;
 		margin-top: 64px;
 	}
 	.logo img{
@@ -424,20 +483,26 @@ footer .container_footer{
 	}
 
 	.Texto_Desconto h1{
-		font-size: 28px;
+		font-size: 20px;
+		line-height: 30px;
 	}
 	.Texto_Desconto{
 		margin-left: 3px;
-		margin-top: -6px;
+		margin-top: 18px;
 	}
 
 	.Texto_Desconto p{
 		margin-left: 37px;
 	}
 
-
+    /*SERVIÇOS*/
 	.Servicos_Interno{
 		margin:auto
+	}
+
+	.Container_Servicos h1{
+		margin: 10px;
+		padding: 20px;
 	}
 
 	.Contato_footer{
@@ -452,7 +517,7 @@ footer .container_footer{
 
 /*MOBILE*/
 
-@media(max-width:414px){
+@media (max-width:425px){
 	.Social{
 		display: none;
 	}
@@ -479,6 +544,8 @@ footer .container_footer{
 		height: 60px;
 		padding-left: 10px;
 	}
+
+	/*MODEBILE*/
 	.Menu_Mobile{
 		display: block;
 		margin-top: 18px;
@@ -512,36 +579,92 @@ footer .container_footer{
 	.container_Modelos{
 		justify-content: center;
 	}
-
+	/*AREA SOBRE*/
+	.Texto_Sobre .Texto_Info{
+		width: 91%;
+	}
 	.Imagem_Sobre img{
 		display: none;
 	}
 
-	.Servicos_Imagem img{
-		height: 80px;
+	/*SERVIÇOS GERAL*/
+
+	.Container_Servicos h1{
+		margin:0px;
+		padding: 0px;
+		margin-top: 26px;
+		font-size: 18px;
+	}
+
+	/*AREA SERVIÇOS MAQUIAGEM*/
+
+	#Maquiagem .Servicos_Imagem{
+		width: 23%;
+	}
+
+	#Maquiagem .Servicos_Imagem img{
+		height: 70px;
 		padding-left: 10px;
 	}
 
-	.Texto_Servicos{
+	#Maquiagem .Texto_Servicos{
 		padding-left: 0px;
 	}
 
-	.Texto_Descricao{
+	#Maquiagem .Texto_Descricao{
 		font-size: 15px;
 		width: 279px;
 	}
 
-	.Container_Servicos h1{
-		font-size: 18px;
+
+
+	#Maquiagem .Container_Descrição_Servicos{
+		justify-content: center;
+		padding: 0px;
 	}
 
-	.Texto_Servicos h2{
+
+	#Maquiagem .Texto_Servicos h2{
 		font-size: 15px;
+	}
+
+
+	/*SERVIÇOS BARBEIRO*/
+
+	#Barbeiro .Servicos_Imagem img{
+		height: 70px;
+		padding-left: 10px;
+	}
+
+	#Barbeiro .Texto_Servicos{
+		padding-left: 15px;
+	}
+   
+	/*SERVICOS CABELELEIRO*/
+
+	#Cabeleleiro{
+		padding: 0px;
+	}
+
+
+   #Cabeleleiro .Servicos_Interno{
+		
+   }
+
+	#Cabeleleiro .Texto_Servicos h2 {
+		font-size: 15px;
+	}
+
+	#Cabeleleiro .Servicos_Imagem img{
+		height: 70px;
+		padding-left: 10px;
 	}
 
 	.Container_Desconto .Imagem_Desconto img{
 		display: none;
 	}
+
+	/*FOOTER*/
 
 	.footer_informacao{
 		margin-bottom: 10px;
@@ -568,54 +691,11 @@ footer .container_footer{
 }
 
 
-@media(max-width:375px){
-	.swiper-container{
-		height: 250px;
-	}
-
-	.Texto_Sobre .Texto_Info{
-		font-size: 15px;
-		width: 298px;
-	}
-
-	.Texto_Sobre h1{
-		font-size: 19px;
-	}
-
-	.Texto_Desconto h1{
-		font-size: 25px;
-	}
-
-	.Container_Servicos h1{
-		font-size: 17px;;
-		margin-left: -41px;
-	}
-
-	.Texto_Servicos h2{
-		margin-top: 9px;
-		margin-left: 50px;
-	}
-
-	.Servicos_Imagem{
-		display: none;
-	}
-
-	.Texto_Descricao{
-		margin-left: 52px;
-	}
-
-	.logo_footer img{
-		margin-left: 5px;
-		height: 70px;
-		width: 70px;
-	}
-
-	.footer_informacao img{
-		width: 17px;
-		height: 17px;
-	}
-
+@media(max-width:320px){
 
 }
+
+
+
 
 
