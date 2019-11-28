@@ -598,12 +598,16 @@ footer .container_footer{
 
 	/*AREA SERVIÇOS MAQUIAGEM*/
 
+	#Maquiagem .Servicos_Interno{
+		width: 105%;
+	}
+
 	#Maquiagem .Servicos_Imagem{
 		width: 23%;
 	}
 
 	#Maquiagem .Servicos_Imagem img{
-		height: 70px;
+		height: 60px;
 		padding-left: 10px;
 	}
 
@@ -612,7 +616,7 @@ footer .container_footer{
 	}
 
 	#Maquiagem .Texto_Descricao{
-		font-size: 15px;
+		font-size: 13px;
 		width: 279px;
 	}
 
@@ -639,6 +643,11 @@ footer .container_footer{
 	#Barbeiro .Texto_Servicos{
 		padding-left: 15px;
 	}
+
+	
+	#Barbeiro .Texto_Descricao{
+		font-size: 13px;
+	}
    
 	/*SERVICOS CABELELEIRO*/
 
@@ -646,13 +655,21 @@ footer .container_footer{
 		padding: 0px;
 	}
 
+	#Cabeleleiro .Servicos_Interno{
+		width: 312px;
+	}
 
-   #Cabeleleiro .Servicos_Interno{
-		
-   }
+	#Cabeleleiro .Texto_Servicos{
+		padding-left: 9px;
+	}
+
 
 	#Cabeleleiro .Texto_Servicos h2 {
 		font-size: 15px;
+	}
+
+	#Cabeleleiro .Texto_Descricao{
+		font-size: 13px;
 	}
 
 	#Cabeleleiro .Servicos_Imagem img{
