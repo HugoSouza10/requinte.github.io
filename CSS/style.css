@@ -24,6 +24,7 @@ body{
 	
 }
 
+
 .logo img{
 	margin-top: 15px;
 }
@@ -38,6 +39,7 @@ body{
 	transition: 0.5s;
 	
 }
+
 
 #Menu ul li a{
 	text-decoration: none;
@@ -71,6 +73,10 @@ body{
 	display: none;
 	
 }
+
+/*CLASSE QUE FECHA O MENU APOS CLICK*/
+
+
 
 
 
@@ -537,16 +543,18 @@ footer .container_footer{
 	.Social{
 		display: none;
 	}
+	#Menu{
+		margin-top: -77px;
+	}
 
 	#Menu ul{
 		display: none;
 		flex-direction: column;
-		width: 411px;
 		height: 303px;
 		background-color:black;
 		text-align: center;
 		position: relative;
-		margin-left: -74px;
+		margin: auto;
 		margin-top: 16px;
 	
 	}
@@ -568,7 +576,7 @@ footer .container_footer{
 		margin-top: 18px;
 	}
 	.Menu_Mobile img{
-		margin-left: 203px;
+		margin-left: 81%;
 
 	}
 
@@ -579,10 +587,16 @@ footer .container_footer{
 	}
 
 	.container_Interno{
-		width: 413px;;
+		width:100%;
+		display: block;
 		z-index: 10;
 	}
 	/*AREA SLIDE*/
+
+	/*SETA*/
+	.swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after{
+		width: 30%;
+	}
 
 	.swiper-container{
 		margin-top: 80px;
