@@ -10,14 +10,13 @@ body{
 	display: flex;
 	background-color:black;
 	height: 80px;
-	max-width: 100%;
 	position: fixed;
 	z-index: 10;
-	width: 1349px;
+	width: 100%;
 }
 
 .container_Interno{
-	width: 1200px;
+	width: 90%;
 	height: 80px;
 	display: flex;
 	justify-content: space-between;
@@ -107,8 +106,9 @@ body{
 }
 .swiper-container {
 	width: 100%;
-	padding-left: 100px;
-	height: 500px;
+
+	
+	
 }
 
 
@@ -303,6 +303,11 @@ body{
 	align-items: center;
 	background-color:#1F1E1E;;
 }
+
+/*EPILAÇÃO*/
+#epilacao .Servicos_Interno{
+	margin: auto;
+}
 /*SEÇÃO CABELELEIRO*/
 #Cabeleleiro{
 	display: flex;
@@ -425,6 +430,9 @@ footer .container_footer{
 /*Desktop*/
 
 @media(max-width: 1024px){
+	.container_Interno{
+		width: 100%;
+	}
 	.visual_Modelos{
 		padding: 28px;
 	}
@@ -504,7 +512,15 @@ footer .container_footer{
 		margin: 10px;
 		padding: 20px;
 	}
+	/*AREA SLIDE*/
+	.swiper-wrapper{
+		padding-top: 78px;
+	}
 
+	.swiper-container img{
+		height: 320px;
+
+	}
 	.Contato_footer{
 		height: 98px;
 	}
@@ -521,6 +537,7 @@ footer .container_footer{
 	.Social{
 		display: none;
 	}
+
 	#Menu ul{
 		display: none;
 		flex-direction: column;
@@ -535,7 +552,7 @@ footer .container_footer{
 	}
 
 	#Menu ul li{
-		margin-left: 0px;
+		margin: auto;
 	}
 
 
@@ -565,10 +582,17 @@ footer .container_footer{
 		width: 413px;;
 		z-index: 10;
 	}
+	/*AREA SLIDE*/
 
 	.swiper-container{
 		margin-top: 80px;
-		height: 300px;
+		height: 200px;
+	}
+	.swiper-wrapper{
+		padding-top:0px;
+	}
+	.swiper-container img{
+		height: 100%;
 	}
 
 	.container_Modelos img{
@@ -579,7 +603,22 @@ footer .container_footer{
 	.container_Modelos{
 		justify-content: center;
 	}
+
+	/*AREA DESCONTO*/
+
+	.Texto_Desconto{
+		margin-left: -14px;
+	}
+
+	.Texto_Desconto p{
+		margin-left: 32px;
+	}
 	/*AREA SOBRE*/
+
+	.Texto_Sobre{
+		margin-top: -117px;
+		
+	}
 	.Texto_Sobre .Texto_Info{
 		width: 91%;
 	}
@@ -617,7 +656,7 @@ footer .container_footer{
 
 	#Maquiagem .Texto_Descricao{
 		font-size: 13px;
-		width: 279px;
+		max-width: 200px;
 	}
 
 
@@ -630,6 +669,7 @@ footer .container_footer{
 
 	#Maquiagem .Texto_Servicos h2{
 		font-size: 15px;
+		max-width: 190px;
 	}
 
 
@@ -639,6 +679,9 @@ footer .container_footer{
 		height: 70px;
 		padding-left: 10px;
 	}
+	#Barbeiro .Servicos_Imagem{
+		width: 89px;
+	}
 
 	#Barbeiro .Texto_Servicos{
 		padding-left: 15px;
@@ -647,6 +690,23 @@ footer .container_footer{
 	
 	#Barbeiro .Texto_Descricao{
 		font-size: 13px;
+		width: 200px;
+	}
+
+	/*AREA EPILAÇÃO*/
+	#epilacao .Servicos_Imagem img{
+		height: 60px;
+	}
+
+	#epilacao .Servicos_Interno{
+		width: 306px;
+	}
+
+	#epilacao .Texto_Servicos{
+		padding-left: 3px;
+	}
+	#epilacao .Servicos_Imagem{
+		width: 83px;
 	}
    
 	/*SERVICOS CABELELEIRO*/
@@ -675,6 +735,18 @@ footer .container_footer{
 	#Cabeleleiro .Servicos_Imagem img{
 		height: 70px;
 		padding-left: 10px;
+	}
+    /*COSMETICOS*/
+	#Cosmetico .Servicos_Imagem{
+		width:48px;
+	}
+
+	#Cosmetico .Servicos_Imagem img{
+		height: 70px;
+	}
+
+	#Cosmetico .Texto_Descricao{
+		width: 172px;
 	}
 
 	.Container_Desconto .Imagem_Desconto img{
@@ -708,9 +780,6 @@ footer .container_footer{
 }
 
 
-@media(max-width:320px){
-
-}
 
 
 
