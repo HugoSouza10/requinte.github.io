@@ -7,7 +7,6 @@
 	<link rel="stylesheet" href="swiper-5.1.0/package/css/swiper.min.css">
 	<link rel="stylesheet" href="animate.css-master/animate.min.css">
 	<meta id="viewport" name="viewport" content="width=device-width, user-scalable=no">
-	<script src="JAVASCRIPT/javacript.js"></script>
 
 	<!-- MASTER 02-->
 
@@ -24,7 +23,7 @@
 					<img class="fechar" src="IMAGEM/nav_animation2.gif" height="40px" width="40px"/>
 				</div>
 					<ul class="animated bounceInRight">
-						<li><a href="#" class="active"> HOME</a></li>
+						<li><a href="#slide" class="active"> HOME</a></li>
 						<li><a href="#Sobre">SOBRE </a></li>
 						<li><a href="#Servicos"> SERVIÇOS</a></li>
 						<li><a href="#Contato"> CONTATO</a></li>				
@@ -40,7 +39,7 @@
 	</div>			
 </header>
 
-<div class="SlideShow">
+<div class="SlideShow" id="slide">
 	<!-- Swiper -->
 	<div class="swiper-container">
 		<div class="swiper-wrapper">
@@ -71,22 +70,7 @@
 </div>
   
 </div>
-<script src="swiper-5.1.0/package/js/swiper.min.js"></script>
-<!-- INICIALIZA SLIDE-->
-<script>
-	 var swiper = new Swiper('.swiper-container', {
-      cssMode: true,
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-      pagination: {
-        el: '.swiper-pagination'
-      },
-      mousewheel: true,
-      keyboard: true,
-    });
-</script>
+
 <!-- AQUI FICA A ÁREA DA IMAGEM DAS 3 MODELOS-->
 <section class="visual_Modelos">
 	<div class="container_Modelos">
@@ -146,7 +130,7 @@
 	<div class="Container_Servicos">
 		<h1>O QUE PODEMOS FAZER POR VOCÊ?</h1>
 	<section id="Maquiagem">
-		<h1>MAQUIAGEM</h1>
+		<h1>ESTÉTICA E BELEZA</h1>
 		<div class="Container_Descrição_Servicos">
 			<div class="Servicos_Interno">
 				<div class="Servicos_Imagem">
@@ -235,6 +219,35 @@
 					</div>
 				</div>
 			</div>
+
+			<div class="Servicos_Interno">
+				<div class="Servicos_Imagem">
+					<img src="IMAGEM/Micropigmentacao.png"/>
+				</div>
+				<div class="Texto_Servicos">
+					<h2>MICROPIGMENTAÇÃO</h2>
+					<div class="Texto_Descricao">
+						A micropigmentação, por definição, é a implantação de pigmento na pele. 
+						Geralmente, esse tratamento é o mais recomendado para quem falhas na 
+						região dos olhos, boca ou sobrancelha.  
+					</div>
+				</div>
+			</div>
+
+			<div class="Servicos_Interno">
+				<div class="Servicos_Imagem">
+					<img src="IMAGEM/Microagulhamento.png"/>
+				</div>
+				<div class="Texto_Servicos">
+					<h2>MICROAGULHAMENTO</h2>
+					<div class="Texto_Descricao">
+						Também conhecido por Indução Percutânea de Colágeno por Agulhas (IPCA),
+						 o microagulhamento é um procedimento dermatológico baseado em diversas 
+						 agulhas bem pequenas que perfuram as camadas da pele para estimular 
+						 o colágeno. 
+					</div>
+				</div>
+			</div>
 	</section>
 
 	<section id="epilacao">
@@ -275,6 +288,20 @@
 			<h1>CABELELEIRO</h1>
 			<div class="Servicos_Interno">
 				<div class="Servicos_Imagem">
+					<img src="IMAGEM/CorteFeminino.png"/>
+				</div>
+				<div class="Texto_Servicos">
+					<h2>CORTE FEMININO E ESCOVA</h2>
+					<div class="Texto_Descricao">
+						O verão de 2020 está se aproximando e trazendo 
+						novas tendências de cortes de cabelo feminino 
+						para aproveitar os meses de calor.
+					</div>
+				</div>
+			</div>
+
+			<div class="Servicos_Interno">
+				<div class="Servicos_Imagem">
 					<img src="IMAGEM/Serviços_Selagem.png"/>
 				</div>
 				<div class="Texto_Servicos">
@@ -286,6 +313,8 @@
 					</div>
 				</div>
 			</div>
+
+			
 
 			<div class="Servicos_Interno">
 				<div class="Servicos_Imagem">
@@ -449,5 +478,23 @@
 		</div>
 	</div>
 </footer>
+<script src="JAVASCRIPT/jquery-3.4.1.min.js"></script>
+<script src="JAVASCRIPT/javacript.js"></script>
+<script src="swiper-5.1.0/package/js/swiper.min.js"></script>
+<!-- INICIALIZA SLIDE-->
+<script>
+		var swiper = new Swiper('.swiper-container', {
+		cssMode: true,
+		navigation: {
+			nextEl: '.swiper-button-next',
+			prevEl: '.swiper-button-prev',
+		},
+		pagination: {
+			el: '.swiper-pagination'
+		},
+		mousewheel: true,
+		keyboard: true,
+		});
+</script>
 </body>
 </html>
