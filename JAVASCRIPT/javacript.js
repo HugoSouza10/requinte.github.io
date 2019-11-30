@@ -28,7 +28,24 @@ $('#Menu a[href^="#"]').on('click', function(e) {
     $('html, body').animate({
         scrollTop: targetOffset - 100
     }, 500);
+
 });
+
+/* FUNCÇÃO FECHAR MENU AO CLICAR EM UM LINK*/
+$('#Menu a[href^="#"]').on('click', function(e){
+    e.preventDefault();
+    if(document.querySelector("#Menu ul").style.display == 'flex'){
+        document.querySelector("#Menu ul").style.display = 'none';
+    }
+   });
+
+
+/* ANIMAÇÃO DÁ SCROLL*/
+
+
+
+
+
 
 
 
