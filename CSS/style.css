@@ -290,43 +290,44 @@ body{
 
 
 
-/*SEÇÃO MAQUIAGEM*/
+/*SEÇÃO ESTÉTICA FEMININA*/
 
-#Maquiagem{
+#estetica_Feminina{
 	background-color:#333333;
 	padding: 17px;
 }
 
-#Maquiagem h2{
+#estetica_Feminina h2{
 	 margin-top:29px;
 }
 
-/*BARBEIRO*/
+/*ESTÉTICA MASCULINA*/
 
-#Barbeiro {
+#estetica_masculina {
 	display: flex;
-    justify-content: center;
-	align-items: center;
-	background-color:#1F1E1E;;
+	flex-wrap: wrap;
+	background-color:#1e1d1d;
+	margin: auto;
+	padding: 17px;
 }
 
-/*EPILAÇÃO*/
-#epilacao .Servicos_Interno{
+#estetica_masculina .Servicos_Interno{
 	margin: auto;
 }
-/*SEÇÃO CABELELEIRO*/
-#Cabeleleiro{
-	display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-	align-items: center;
-	background-color: #333333;
-	padding: 50px;
-}
+
+
+
+
 
 /*SEÇÃO COSMETICOS*/
-
-#Cosmetico .Servicos_Interno{
+#cosmetico{
+	display: flex;
+	flex-wrap: wrap;
+	background-color:#333333;
+	margin: auto;
+	padding: 17px;
+}
+#cosmetico .Servicos_Interno{
 	margin: auto;
 }
 
@@ -649,118 +650,77 @@ footer .container_footer{
 		font-size: 18px;
 	}
 
-	/*AREA SERVIÇOS MAQUIAGEM*/
+	/*AREA SERVIÇOS ESTETICA */
 
-	#Maquiagem .Servicos_Interno{
+	#estetica_Feminina .Servicos_Interno{
 		width: 105%;
 	}
 
-	#Maquiagem .Servicos_Imagem{
+	#estetica_Feminina .Servicos_Imagem{
 		width: 23%;
 	}
 
-	#Maquiagem .Servicos_Imagem img{
+	#estetica_Feminina .Servicos_Imagem img{
 		height: 60px;
 		padding-left: 10px;
 	}
 
-	#Maquiagem .Texto_Servicos{
+	#estetica_Feminina .Texto_Servicos{
 		padding-left: 0px;
 	}
 
-	#Maquiagem .Texto_Descricao{
+	#estetica_Feminina .Texto_Descricao{
 		font-size: 13px;
 		max-width: 200px;
 	}
 
 
 
-	#Maquiagem .Container_Descrição_Servicos{
+	#estetica_Feminina .Container_Descrição_Servicos{
 		justify-content: center;
 		padding: 0px;
 	}
 
 
-	#Maquiagem .Texto_Servicos h2{
+	#estetica_Feminina .Texto_Servicos h2{
 		font-size: 15px;
 		max-width: 190px;
 	}
 
 
-	/*SERVIÇOS BARBEIRO*/
+	/*SERVIÇOS ESTÉTICA MASCULINA*/
 
-	#Barbeiro .Servicos_Imagem img{
+	#estetica_masculina .Servicos_Imagem img{
 		height: 70px;
 		padding-left: 10px;
 	}
-	#Barbeiro .Servicos_Imagem{
+	#estetica_masculina .Servicos_Imagem{
 		width: 89px;
 	}
 
-	#Barbeiro .Texto_Servicos{
+	#estetica_masculina .Texto_Servicos{
 		padding-left: 15px;
 	}
 
 	
-	#Barbeiro .Texto_Descricao{
+	#estetica_masculina .Texto_Descricao{
 		font-size: 13px;
 		width: 200px;
 	}
 
-	/*AREA EPILAÇÃO*/
-	#epilacao .Servicos_Imagem img{
-		height: 60px;
-	}
-
-	#epilacao .Servicos_Interno{
-		width: 306px;
-	}
-
-	#epilacao .Texto_Servicos{
-		padding-left: 3px;
-	}
-	#epilacao .Servicos_Imagem{
-		width: 83px;
-	}
-   
-	/*SERVICOS CABELELEIRO*/
-
-	#Cabeleleiro{
-		padding: 0px;
-	}
-
-	#Cabeleleiro .Servicos_Interno{
-		width: 312px;
-	}
-
-	#Cabeleleiro .Texto_Servicos{
-		padding-left: 9px;
-	}
-
-
-	#Cabeleleiro .Texto_Servicos h2 {
-		font-size: 15px;
-	}
-
-	#Cabeleleiro .Texto_Descricao{
-		font-size: 13px;
-	}
-
-	#Cabeleleiro .Servicos_Imagem img{
-		height: 70px;
-		padding-left: 10px;
-	}
-    /*COSMETICOS*/
-	#Cosmetico .Servicos_Imagem{
-		width:48px;
-	}
-
-	#Cosmetico .Servicos_Imagem img{
-		height: 70px;
-	}
-
-	#Cosmetico .Texto_Descricao{
+	
+	/*SERVIÇOS COSMETICOS*/
+	#cosmetico .Texto_Descricao{
 		width: 172px;
+	}
+
+	#cosmetico .Servicos_Imagem img{
+		height: 70px;
+		width: 70px;
+	}
+
+	#cosmetico .Servicos_Imagem{
+		width: 55px;
 	}
 
 	.Container_Desconto .Imagem_Desconto img{
