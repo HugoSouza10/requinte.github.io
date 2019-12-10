@@ -117,7 +117,9 @@ body{
 	
 }
 
-
+ .swiper-container img{
+	height: 555px;
+}
 /*ÁREA DO CORPO DO SITE*/
 
 
